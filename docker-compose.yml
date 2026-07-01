@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: sleepy_panda
+    ports: 
+      - "8000:8000"
