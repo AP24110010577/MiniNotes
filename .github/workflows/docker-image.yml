@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image CI/CD
 
 on:
   push:
@@ -27,4 +27,7 @@ jobs:
 
     - name: push it into docker hub
       run: docker compose push app
+
+    - name: integrate Deployement
+      run: ./deploy.sh
       
