@@ -27,7 +27,11 @@ jobs:
 
     - name: push it into docker hub
       run: docker compose push app
+    
+    - name: make deploy.sh executable
+      run: chmod +x deploys.h
 
     - name: integrate Deployement
       run: ./deploy.sh
       
+    
