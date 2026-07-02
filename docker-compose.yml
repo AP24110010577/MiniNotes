@@ -1,6 +1,7 @@
 services:
   app:
     build: .
+    image: roshaaaaan/mininotes:latest
     container_name: sleepy_panda
     ports: 
       - "8000:8000"
