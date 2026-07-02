@@ -50,6 +50,10 @@ def greet():
 def hello():
     return {"welcome": "helloworld"}
 
+@app.get("/bhai")
+def bhAAi():
+    return {"emaindiraaa  !!"}
+
 
 @app.get("/notes", response_model=List[NoteResponse])
 def get_all_notes():
