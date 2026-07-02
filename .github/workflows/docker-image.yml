@@ -29,7 +29,7 @@ jobs:
       run: docker compose push app
     
     - name: make deploy.sh executable
-      run: chmod +x deploys.h
+      run: chmod +x deploy.sh
 
     - name: integrate Deployement
       run: ./deploy.sh
